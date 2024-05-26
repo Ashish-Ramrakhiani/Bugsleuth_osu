@@ -50,7 +50,7 @@ public class Main {
         Population <CandidateList> population = createInitialPopulation(Configuration.popSize, allStatements);
         Fitness<CandidateList,Double> fitness  = new CandidateFitness();
 
-        GeneticAlgorithm<CandidateList, Double> ga = new GeneticAlgorithm<CandidateList, Double>(population,fitness,allRankLists);
+        GeneticAlgorithm<CandidateList, Double> ga = new GeneticAlgorithm<CandidateList, Double>(population,fitness,allRankLists,allStatements);
         addListener(ga);
         ga.evolve(2);
 
@@ -131,26 +131,78 @@ public class Main {
         return population;
     }
 
-
-
-
     public static class CandidateList implements Chromosome<CandidateList>, Cloneable {
 
-        private static  final Random random = new Random();
+        private static  final Random random = new Random(Configuration.seed);
         private String[] candidate = new String[Configuration.k];
 
-        public CandidateList mutate(){
+        public CandidateList mutate(LinkedHashSet<String> allStatements){
 
+            int mut_op = random.nextInt(4);
             CandidateList result = this.clone();
-            int index1 = random.nextInt(this.candidate.length);
-            int index2 = random.nextInt(this.candidate.length);
+            switch(mut_op) {
+                case 0: {
+                    int index1 = random.nextInt(this.candidate.length);
+                    int index2 = random.nextInt(this.candidate.length);
+                    while(index2==index1)
+                    {
+                        index2 = random.nextInt(this.candidate.length);
+                    }
+                    String temp = result.candidate[index1];
+                    result.candidate[index1] = result.candidate[index2];
+                    result.candidate[index2] = temp;
+                }
+                case 1:
+                {
+                    String temp = result.candidate[0];
+                    result.candidate[0] = result.candidate[result.candidate.length-1];
+                    result.candidate[result.candidate.length-1] = temp;
 
-            String temp = result.candidate[index1];
-            result.candidate[index1] = result.candidate[index2];
-            result.candidate[index2] = temp;
+                }
+                case 2:
+                {
+                    List<String> allStatementsList = new ArrayList<>(allStatements);
+                    int index1 = random.nextInt(0,allStatements.size());
+                    while(Arrays.asList(result.candidate).contains(allStatementsList.get(index1)))
+                    {
+                        index1 = random.nextInt(0,allStatements.size());
 
+                    }
+                    int index2 = random.nextInt(this.candidate.length);
+
+
+
+                    result.candidate[index2] = allStatements.toArray(new String[0])[index1];
+
+                }
+               case 3:
+                {
+                   List<String> allStatementsList = new ArrayList<>(allStatements);
+                    int index = random.nextInt(this.candidate.length);
+                    String path = result.candidate[index].split("#")[0];
+                    int line_no = Integer.parseInt(result.candidate[index].split("#")[1]);
+
+                    String[] statementList = new String[6];
+                    for(int i =1,j=0;i<=3;i++,j++)
+                    {
+                        statementList[j] = path+"#"+(line_no+i);
+                        j++;
+                        statementList[j] = path+"#"+(line_no-i);
+
+                    }
+                    for(int k =0;k<statementList.length;k++)
+                    {
+                        if(allStatementsList.contains(statementList[k]) && !(Arrays.asList(result.candidate).contains(statementList[k])))
+                        {
+                            result.candidate[index] = statementList[k];
+                            break;
+                        }
+                    }
+
+                }
+
+            }
             return result;
-
         }
         public CandidateList getRandomRanklist(LinkedHashSet<String> allStatements)
         {
@@ -159,16 +211,11 @@ public class Main {
 
             for(int i=0;i<Configuration.k;i++)
             {
-                boolean find_unique = true;
-                while(find_unique)
-                {
-                    int index = random.nextInt(this.candidate.length);
-                    if(!Arrays.asList(result.candidate).contains(stmt_pool[index]))
-                    {
-                        find_unique = false;
-                        result.candidate[i] = stmt_pool[index];
-                    }
+                int index = random.nextInt(stmt_pool.length);
+                while(Arrays.asList(result.candidate).contains(stmt_pool[index])) {
+                    index = random.nextInt(stmt_pool.length);
                 }
+                result.candidate[i] = stmt_pool[index];
             }
             return result;
 
