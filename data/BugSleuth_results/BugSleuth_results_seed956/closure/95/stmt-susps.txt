@@ -1,0 +1,5 @@
+com.google.javascript.jscomp.CodeGenerator#278
+com.google.javascript.rhino.jstype.ObjectType#446
+com.google.javascript.jscomp.CompilerOptions#38
+com.google.javascript.rhino.jstype.ObjectType#314
+com.google.javascript.jscomp.CompilerOptions#610

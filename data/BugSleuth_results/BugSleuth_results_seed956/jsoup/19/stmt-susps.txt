@@ -1,0 +1,5 @@
+org.jsoup.safety.Whitelist#269
+org.jsoup.parser.Tag#132
+org.jsoup.parser.TokeniserState#1074
+org.jsoup.safety.Whitelist#55
+org.jsoup.safety.Whitelist#175

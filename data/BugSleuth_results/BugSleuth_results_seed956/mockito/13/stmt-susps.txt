@@ -1,0 +1,5 @@
+org.mockito.Mockito#1502
+org.mockito.Mockito#1139
+org.mockito.internal.stubbing.BaseStubbing#15
+org.mockito.internal.creation.jmock.ClassImposterizer#63
+org.mockito.internal.stubbing.answers.Returns#22

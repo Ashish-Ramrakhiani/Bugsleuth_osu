@@ -1,0 +1,5 @@
+org.jsoup.helper.Validate#92
+org.jsoup.select.Evaluator#651
+org.jsoup.helper.W3CDom#85
+org.jsoup.parser.TokenQueue#272
+org.jsoup.helper.W3CDom#84

@@ -1,0 +1,5 @@
+com.google.javascript.rhino.jstype.PrototypeObjectType#574
+com.google.javascript.jscomp.TypedScopeCreator#1997
+com.google.javascript.jscomp.DisambiguateProperties#565
+com.google.javascript.jscomp.NameReferenceGraphConstruction#466
+com.google.javascript.jscomp.NameReferenceGraphConstruction#461

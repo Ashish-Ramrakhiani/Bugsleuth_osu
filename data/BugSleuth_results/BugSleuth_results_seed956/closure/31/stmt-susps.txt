@@ -1,0 +1,5 @@
+com.google.javascript.jscomp.ant.CompileTask#289
+com.google.javascript.rhino.Node#2145
+com.google.javascript.rhino.Node#2144
+com.google.javascript.jscomp.DependencyOptions#119
+com.google.javascript.jscomp.AbstractCommandLineRunner#230

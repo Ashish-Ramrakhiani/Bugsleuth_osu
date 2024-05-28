@@ -1,0 +1,5 @@
+com.google.javascript.jscomp.TypeValidator#360
+com.google.javascript.jscomp.AbstractCommandLineRunner#455
+com.google.javascript.jscomp.parsing.JsDocInfoParser#1337
+com.google.javascript.jscomp.CommandLineRunner#455
+com.google.javascript.jscomp.parsing.JsDocInfoParser#1349

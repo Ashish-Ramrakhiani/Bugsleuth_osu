@@ -1,0 +1,5 @@
+org.mockito.Mockito#1401
+org.mockito.Mockito#1366
+org.mockito.internal.creation.MockSettingsImpl#103
+org.mockito.Mockito#1400
+org.mockito.internal.configuration.SpyAnnotationEngine#100

@@ -1,0 +1,5 @@
+org.jsoup.parser.Parser#205
+org.jsoup.parser.Parser#30
+org.jsoup.helper.HttpConnection#775
+org.jsoup.helper.HttpConnection#960
+org.jsoup.examples.HtmlToPlainText#35

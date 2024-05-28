@@ -1,0 +1,5 @@
+com.fasterxml.jackson.core.JsonGenerator#1330
+com.fasterxml.jackson.core.JsonGenerationException#48
+com.fasterxml.jackson.core.JsonParser#1713
+com.fasterxml.jackson.core.JsonGenerator#1328
+com.fasterxml.jackson.core.JsonGenerationException#50

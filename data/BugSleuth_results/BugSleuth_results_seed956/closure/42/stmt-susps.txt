@@ -1,0 +1,5 @@
+com.google.javascript.jscomp.AbstractCommandLineRunner#1406
+com.google.javascript.jscomp.parsing.TypeSafeDispatcher#182
+com.google.javascript.jscomp.parsing.TypeSafeDispatcher#218
+com.google.javascript.rhino.jstype.SimpleSourceFile#51
+com.google.javascript.rhino.jstype.SimpleSourceFile#52

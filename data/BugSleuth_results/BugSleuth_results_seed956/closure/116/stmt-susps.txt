@@ -1,0 +1,5 @@
+com.google.javascript.jscomp.DefaultPassConfig#924
+com.google.javascript.jscomp.CompilerOptions#1968
+com.google.javascript.rhino.Node#1446
+com.google.javascript.rhino.Node#2195
+com.google.javascript.rhino.Node#2197

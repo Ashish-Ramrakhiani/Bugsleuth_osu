@@ -1,0 +1,5 @@
+org.mockito.ArgumentCaptor#123
+org.mockito.exceptions.Reporter#256
+org.mockito.internal.configuration.DefaultAnnotationEngine#71
+org.mockito.internal.configuration.DefaultAnnotationEngine#69
+org.mockito.exceptions.Reporter#255

@@ -1,0 +1,5 @@
+org.mockito.internal.creation.jmock.ClassImposterizer#86
+org.mockito.internal.creation.jmock.ClassImposterizer#30
+org.mockito.Matchers#221
+org.mockito.internal.matchers.AnyVararg#16
+org.mockito.internal.creation.jmock.ClassImposterizer#87

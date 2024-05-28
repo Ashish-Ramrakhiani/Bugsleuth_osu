@@ -1,0 +1,5 @@
+com.google.javascript.jscomp.Compiler#830
+com.google.javascript.jscomp.RemoveTryCatch#53
+com.google.javascript.jscomp.Compiler#776
+com.google.javascript.rhino.IR#231
+com.google.javascript.rhino.IR#501

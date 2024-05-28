@@ -1,0 +1,5 @@
+org.apache.commons.lang3.reflect.TypeUtils#612
+org.apache.commons.lang3.reflect.TypeUtils#615
+org.apache.commons.lang3.text.translate.EntityArrays#34
+org.apache.commons.lang3.reflect.TypeUtils#711
+org.apache.commons.lang3.reflect.TypeUtils#676

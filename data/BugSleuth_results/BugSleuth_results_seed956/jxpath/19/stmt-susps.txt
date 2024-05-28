@@ -1,0 +1,5 @@
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer#223
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer#69
+org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer#223
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer#232
+org.apache.commons.jxpath.ri.NamespaceResolver#169

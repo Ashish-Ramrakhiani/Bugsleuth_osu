@@ -1,0 +1,5 @@
+com.google.javascript.jscomp.PeepholeFoldConstants#845
+com.google.javascript.rhino.Node#127
+com.google.javascript.jscomp.AbstractCommandLineRunner#679
+com.google.javascript.jscomp.AbstractCommandLineRunner#677
+com.google.javascript.jscomp.ant.CompileTask#148

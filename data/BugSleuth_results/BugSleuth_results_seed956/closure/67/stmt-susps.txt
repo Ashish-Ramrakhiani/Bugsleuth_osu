@@ -1,0 +1,5 @@
+com.google.javascript.rhino.Node#1427
+com.google.javascript.rhino.Node#195
+com.google.javascript.jscomp.NameReferenceGraphConstruction#503
+com.google.javascript.jscomp.NameReferenceGraphConstruction#404
+com.google.javascript.jscomp.NameReferenceGraphConstruction#140

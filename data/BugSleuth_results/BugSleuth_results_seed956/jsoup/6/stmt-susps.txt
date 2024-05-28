@@ -1,0 +1,5 @@
+org.jsoup.nodes.Entities#59
+org.jsoup.nodes.Entities#61
+org.jsoup.Connection#88
+org.jsoup.parser.Parser#85
+org.jsoup.nodes.Entities#70

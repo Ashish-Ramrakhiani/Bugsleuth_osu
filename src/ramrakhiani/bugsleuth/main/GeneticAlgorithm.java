@@ -2,13 +2,11 @@ package ramrakhiani.bugsleuth.main;
 import ramrakhiani.bugsleuth.config.Configuration;
 
 import java.util.*;
-import java.util.Random;
 
 public class GeneticAlgorithm<C extends Chromosome<C>, T extends Comparable<T>> {
 
     private static final int ALL_PARENTAL_CHROMOSOMES = Integer.MAX_VALUE;
 
-    private static final Random random = new Random(Configuration.seed);
 
     private class ChromosomesComparator implements Comparator<C> {
 
@@ -28,10 +26,8 @@ public class GeneticAlgorithm<C extends Chromosome<C>, T extends Comparable<T>> 
                 fit = GeneticAlgorithm.this.fitnessFunc.calculate(chr,GeneticAlgorithm.this.allRankLists);
                 this.cache.put(chr, fit);
             }
-           // System.out.println("Fitness of "++"is "+fit);
             return fit;
         };
-
         public void clearCache() {
             this.cache.clear();
         }
@@ -43,8 +39,13 @@ public class GeneticAlgorithm<C extends Chromosome<C>, T extends Comparable<T>> 
 
     private Population<C> population;
 
-    private List<LinkedHashSet<String>> allRankLists;
-    private LinkedHashSet<String> allStatements;
+    private final List<LinkedHashSet<String>> allRankLists;
+    private final LinkedHashSet<String> allStatements;
+
+    private final String defect;
+    private final Random random;
+    private long seed;
+    private final int convIn;
 
     // listeners of genetic algorithm iterations (handle callback afterwards)
     private final List<IterationListener<C, T>> iterationListeners = new LinkedList<IterationListener<C, T>>();
@@ -56,38 +57,40 @@ public class GeneticAlgorithm<C extends Chromosome<C>, T extends Comparable<T>> 
     private int parentChromosomesSurviveCount = ALL_PARENTAL_CHROMOSOMES;
 
     private int iteration = 0;
+    private int noImprovement = 0;
 
-    public GeneticAlgorithm(Population<C> population, Fitness<C, T> fitnessFunc, List<LinkedHashSet<String>> allRankLists, LinkedHashSet<String> allStatements) {
+    public GeneticAlgorithm(Population<C> population, Fitness<C, T> fitnessFunc, List<LinkedHashSet<String>> allRankLists, LinkedHashSet<String> allStatements, String defect, long seed, int convIn) {
         this.population = population;
         this.fitnessFunc = fitnessFunc;
         this.chromosomesComparator = new ChromosomesComparator();
         this.allRankLists = allRankLists;
         this.allStatements = allStatements;
+        this.defect = defect;
         this.population.sortPopulationByFitness(this.chromosomesComparator);
+        this.random = new Random(seed);
+        this.seed = seed;
+        this.convIn = convIn;
 
     }
 
     public void evolve() {
         int parentPopulationSize = this.population.getSize();
 
-        Population<C> newPopulation = new Population<C>();
+        Population<C> newPopulation = new Population<C>(this.seed);
 
         float selfraction = random.nextFloat(0,1);
         int survivecount =  Math.round(selfraction * Configuration.popSize);
 
-        //System.out.println("Survive count"+survivecount);
-       //System.out.println(this.population.getSize() - survivecount);
-        //System.out.println();
         while(newPopulation.getSize()<(Configuration.popSize- survivecount)){
 
-            //System.out.println("Pop size"+newPopulation.getSize());
-
-            if(random.nextFloat(0,1)<=0.9) {
+           if(random.nextFloat(0,1)<=Configuration.MP) {
                 C chromosome = this.population.getRandomChromosome();
                 C mutated = chromosome.mutate(this.allStatements);
                 newPopulation.addChromosome(mutated);
             }
-            if(random.nextFloat(0,1)<=0.9) {
+
+           if(random.nextFloat(0,1)<=Configuration.CP)
+                {
 
                 C parent1 = this.rouletteWheelSelection();
                 C parent2 = this.rouletteWheelSelection();
@@ -96,28 +99,20 @@ public class GeneticAlgorithm<C extends Chromosome<C>, T extends Comparable<T>> 
                 }
 
                 List<C> crossovered = parent1.partially_mapped_crossover(parent2);
-
-                // newPopulation.addChromosome(mutated);
                 for (C c : crossovered) {
                     newPopulation.addChromosome(c);
                 }
             }
-            //System.out.println("Stuck in crossover");
         }
 
         while(newPopulation.getSize()<Configuration.popSize) {
 
-            C selectedChromosome = tournamentSelector(20);
+            C selectedChromosome = tournamentSelector(Configuration.tSize);
             newPopulation.addChromosome(selectedChromosome);
-           //System.out.println("Stuck in tournament");
-
         }
 
         newPopulation.sortPopulationByFitness(this.chromosomesComparator);
-        //newPopulation.trim(parentPopulationSize);
-        //System.out.println("New population size is"+newPopulation.getSize());
         this.population = newPopulation;
-
     }
 
     public void evolve(int count) {
@@ -129,9 +124,8 @@ public class GeneticAlgorithm<C extends Chromosome<C>, T extends Comparable<T>> 
             }
             this.evolve();
             this.iteration = i;
-            System.out.println("Iteration "+i);
             for (IterationListener<C, T> l : this.iterationListeners) {
-                l.update(this);
+                l.update(this, this.defect);
             }
         }
     }
@@ -149,6 +143,8 @@ public class GeneticAlgorithm<C extends Chromosome<C>, T extends Comparable<T>> 
     }
 
     public C getBest() {
+
+        this.population.sortPopulationByFitness(this.chromosomesComparator);
         return this.population.getChromosomeByIndex(0);
     }
 
@@ -191,7 +187,8 @@ public class GeneticAlgorithm<C extends Chromosome<C>, T extends Comparable<T>> 
 
     public C rouletteWheelSelection() {
         double totalFitness = calculateTotalFitness();
-        double pop_sector = random.nextDouble() * totalFitness;
+        double pop_sector =random.nextDouble() * totalFitness;
+        //double pop_sector =0.7 * totalFitness;
         double cumulativeFitness = 0.0;
 
         for (C chromosome : this.population) {
@@ -205,22 +202,16 @@ public class GeneticAlgorithm<C extends Chromosome<C>, T extends Comparable<T>> 
 
     public C tournamentSelector(int tournamentSize) {
         C bestChromosome = null;
-        double bestFitness = Double.NEGATIVE_INFINITY;
-        //System.out.println("tournament size is"+tournamentSize);
+        double bestFitness = Double.POSITIVE_INFINITY;
         for (int i = 0; i < tournamentSize; i++) {
 
-            C randomChromosome = this.population.getRandomChromosome();
+          C randomChromosome = this.population.getRandomChromosome();
 
-            //T fitness = this.chromosomesComparator.fit(randomChromosome);
             double fitness = this.fitnessFunc.calculateDouble(randomChromosome, this.allRankLists);
-            //T fitness = GeneticAlgorithm.this.fitnessFunc.calculate(randomChromosome, this.allRankLists);
-           // System.out.println("Fitness is"+fitness);
-
-            if (fitness > bestFitness) {
+            if (fitness < bestFitness) {
                 bestChromosome = randomChromosome;
                 bestFitness = fitness;
             }
-            //fitness.compareTo(bestFitness);
         }
         if (bestChromosome == null) {
             throw new RuntimeException("Tournament selection failed to select a chromosome");

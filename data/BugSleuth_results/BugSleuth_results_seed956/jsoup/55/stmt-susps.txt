@@ -1,0 +1,5 @@
+org.jsoup.nodes.Entities#115
+org.jsoup.nodes.Entities#112
+org.jsoup.helper.HttpConnection#611
+org.jsoup.nodes.Entities#113
+org.jsoup.parser.HtmlTreeBuilder#201

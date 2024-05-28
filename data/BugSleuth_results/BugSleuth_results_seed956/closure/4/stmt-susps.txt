@@ -1,0 +1,5 @@
+com.google.javascript.rhino.jstype.FunctionType#497
+com.google.javascript.rhino.jstype.ObjectType#210
+com.google.javascript.jscomp.CodingConventions#400
+com.google.javascript.jscomp.TypeCheck#1619
+com.google.javascript.rhino.jstype.NamedType#315

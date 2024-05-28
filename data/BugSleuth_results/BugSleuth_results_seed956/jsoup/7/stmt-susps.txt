@@ -1,0 +1,5 @@
+org.jsoup.safety.Cleaner#39
+org.jsoup.nodes.DataNode#46
+org.jsoup.nodes.DataNode#29
+org.jsoup.nodes.DataNode#44
+org.jsoup.safety.Cleaner#42

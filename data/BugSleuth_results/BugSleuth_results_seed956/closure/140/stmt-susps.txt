@@ -1,0 +1,5 @@
+com.google.javascript.jscomp.Compiler#1585
+com.google.javascript.jscomp.parsing.IRFactory#949
+com.google.javascript.jscomp.Compiler#1532
+com.google.javascript.rhino.jstype.NamedType#173
+com.google.javascript.jscomp.SanityCheck#122

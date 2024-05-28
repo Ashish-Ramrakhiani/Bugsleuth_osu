@@ -4,10 +4,10 @@ import ramrakhiani.bugsleuth.config.Configuration;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.lang.reflect.GenericArrayType;
 import java.util.*;
-
+import java.io.BufferedWriter;
 
 public class Main {
     public static void main(String[] args) {
@@ -29,54 +29,96 @@ public class Main {
 
         readDefects(defect, defects_all,all_defects);
 
-        for (int i = 2; i <= numberOfFiles+1; i++) {
-            allRankLists.add(new LinkedHashSet<>());
-            String filePath = args[i];
+        for(String defects: defects_all ) {
+
+            defect = defects;
+            allRankLists.clear();
+            allStatements.clear();
+            System.out.println("Processing defect "+defect);
+
+            for (int i = 2; i <= numberOfFiles + 1; i++) {
+                allRankLists.add(new LinkedHashSet<>());
+                String filePath = args[i];
 
 
-            File flPath = new File(filePath);
-            if (!flPath.exists())
+                File flPath = new File(filePath);
+                if (!flPath.exists()) {
+                    System.out.println(filePath + " file path does not exist");
+                    System.exit(1);
+                }
+
+                readStatementsFromFile(defect, filePath, i - 2, allStatements, allRankLists);
+            }
+            if(allRankLists.size()!= numberOfFiles)
             {
-                System.out.println(filePath + " file path does not exist");
-                System.exit(1);
+                System.out.println("Not enough input results found for "+defect);
+                continue;
             }
 
-            readStatementsFromFile(defect,filePath,i-2,allStatements,allRankLists);
+            Population<CandidateList> population = createInitialPopulation(Configuration.popSize, allStatements);
+            Fitness<CandidateList, Double> fitness = new CandidateFitness();
+
+            GeneticAlgorithm<CandidateList, Double> ga = new GeneticAlgorithm<CandidateList, Double>(population, fitness, allRankLists, allStatements, defect,Configuration.seed,Configuration.convIn);
+            addListener(ga, defect);
+            ga.evolve(Configuration.maxIter);
         }
-
-        System.out.println("All Rank Lists"+ allRankLists);
-        System.out.println("All Statements"+ allStatements);
-
-        Population <CandidateList> population = createInitialPopulation(Configuration.popSize, allStatements);
-        Fitness<CandidateList,Double> fitness  = new CandidateFitness();
-
-        GeneticAlgorithm<CandidateList, Double> ga = new GeneticAlgorithm<CandidateList, Double>(population,fitness,allRankLists,allStatements);
-        addListener(ga);
-        ga.evolve(2);
-
-
     }
 
-    private static void addListener(GeneticAlgorithm<CandidateList, Double> ga) {
+    private static void addListener(GeneticAlgorithm<CandidateList, Double> ga, String defect) {
 
-        System.out.println(String.format("%s\t%s\t%s", "iter", "fit", "chromosome"));
+        System.out.println(String.format("%s\t%s\t%s\t%s", "iter", "fit", "chromosome", "global best chromosome"));
 
         ga.addIterationListener(new IterationListener<CandidateList, Double>() {
 
             private final double threshold = 1e-5;
-
+            int noImprovement = 0;
+            CandidateList globalbest = null;
             @Override
-            public void update(GeneticAlgorithm<CandidateList, Double> ga) {
+            public void update(GeneticAlgorithm<CandidateList, Double> ga, String defect) {
+
 
                 CandidateList best = ga.getBest();
+
+                if(ga.getIteration() == 0) {
+                    System.out.println("First iteration");
+                    System.out.println("Global Best changed");
+                    globalbest = best.clone();
+                    noImprovement++;
+
+                }
+                else {
+                    if(ga.fitness(best) < ga.fitness(globalbest))
+                    {
+                        noImprovement = 0;
+                        globalbest = best.clone();
+                        System.out.println("Global Best changed");
+                    }
+                    else
+                    {
+                        noImprovement++;
+                    }
+                }
+
                 double bestFit = ga.fitness(best);
                 int iteration = ga.getIteration();
-
+                if(iteration == Configuration.maxIter -1)
+                {
+                    saveResultsToFile(defect,best.getCandidate());
+                }
                 // Listener prints best achieved solution
-                System.out.println(String.format("%s\t%s\t%s", iteration, bestFit, Arrays.toString(best.getCandidate())));
-
-                // If fitness is satisfying - we can stop Genetic algorithm
-                if (bestFit < this.threshold) {
+                System.out.println(String.format("%s\t%s\t%s\t%s", iteration, bestFit, Arrays.toString(best.getCandidate()),Arrays.toString(globalbest.getCandidate())));
+                //System.out.println(String.format("%s", Arrays.toString(globalbest.getCandidate())));
+                /*if (iteration == 0)
+                {
+                    for(int i =0;i<ga.getPopulation().getSize();i++)
+                    {
+                        System.out.println("Fitness:"+ga.fitness(ga.getPopulation().getChromosomeByIndex(i)));
+                        System.out.println("Chromosome:"+Arrays.toString(ga.getPopulation().getChromosomeByIndex(i).getCandidate()));
+                    }
+                    System.out.println("Worst " + Arrays.toString(ga.getWorst().getCandidate()));
+                    System.out.println("Worst fitness" + ga.fitness(ga.getWorst()));
+                }*/
+                if (noImprovement >= Configuration.convIn) {
                     ga.terminate();
                 }
             }
@@ -92,7 +134,6 @@ public class Main {
             List<String> genotype = new ArrayList<String>(Arrays.asList(chromosome.getCandidate()));
 
             double totalDistance = 0.0;
-
 
             for(LinkedHashSet<String> rankList:allRankLists)
             {
@@ -122,7 +163,7 @@ public class Main {
     }
 
     private static Population<CandidateList> createInitialPopulation(int populationSize, LinkedHashSet<String> allStatements) {
-        Population<CandidateList> population = new Population<CandidateList>();
+        Population<CandidateList> population = new Population<CandidateList>(Configuration.seed);
         CandidateList base = new CandidateList();
         for (int i = 0; i < populationSize; i++) {
             CandidateList chr = base.getRandomRanklist(allStatements);
@@ -133,12 +174,13 @@ public class Main {
 
     public static class CandidateList implements Chromosome<CandidateList>, Cloneable {
 
-        private static  final Random random = new Random(Configuration.seed);
+        private static final Random random = new Random(Configuration.seed );
         private String[] candidate = new String[Configuration.k];
 
         public CandidateList mutate(LinkedHashSet<String> allStatements){
-
-            int mut_op = random.nextInt(4);
+           int mut_op = random.nextInt(4);
+            //System.out.println("Seed is:"+Configuration.random.getSeed());
+            //int mut_op = 1;
             CandidateList result = this.clone();
             switch(mut_op) {
                 case 0: {
@@ -151,6 +193,7 @@ public class Main {
                     String temp = result.candidate[index1];
                     result.candidate[index1] = result.candidate[index2];
                     result.candidate[index2] = temp;
+                    //System.out.println("Seed  inside mut is:"+Configuration.random.getSeed());
                 }
                 case 1:
                 {
@@ -163,15 +206,13 @@ public class Main {
                 {
                     List<String> allStatementsList = new ArrayList<>(allStatements);
                     int index1 = random.nextInt(0,allStatements.size());
+                   // System.out.println("Seed  inside mut 3 is:"+Configuration.random.getSeed());
                     while(Arrays.asList(result.candidate).contains(allStatementsList.get(index1)))
                     {
                         index1 = random.nextInt(0,allStatements.size());
 
                     }
                     int index2 = random.nextInt(this.candidate.length);
-
-
-
                     result.candidate[index2] = allStatements.toArray(new String[0])[index1];
 
                 }
@@ -207,8 +248,8 @@ public class Main {
         public CandidateList getRandomRanklist(LinkedHashSet<String> allStatements)
         {
             CandidateList result = this.clone();
+            random.setSeed(Configuration.seed);
             String[] stmt_pool = allStatements.toArray(new String[0]);
-
             for(int i=0;i<Configuration.k;i++)
             {
                 int index = random.nextInt(stmt_pool.length);
@@ -286,9 +327,6 @@ public class Main {
 
     }
 
-
-
-
     private static HashMap<String, Double> sortByValues(HashMap<String, Double> map) {
         List<Object> list = new LinkedList<Object>(map.entrySet());
 
@@ -343,8 +381,6 @@ public class Main {
 
     }
 
-
-
     private static void readStatementsFromFile(String defect,String filePath, int rankListIndex, LinkedHashSet<String> allStatements,List<LinkedHashSet<String>> allRankLists ) {
 
 
@@ -397,10 +433,9 @@ public class Main {
                     for(String stmt: sortedFL.keySet())
                     {
                         uniqueStatements.add(stmt);
+                        counter ++;
                         if(counter == Configuration.k)
                             break;
-                        counter ++;
-
                     }
                     allStatements.addAll(uniqueStatements);
                     allRankLists.get(rankListIndex).addAll(uniqueStatements);
@@ -430,5 +465,23 @@ public class Main {
         br.close();
         System.out.println("Setting root directory as: " + Configuration.rootDirectory);
         Configuration.setParameters(Configuration.rootDirectory);
+    }
+
+    private static void saveResultsToFile(String defect,String[] bestPhenotype) {
+        String result_file = Configuration.resultDirectory+"/BugSleuth_results_seed"+Configuration.seed + "/" + defect.split("_")[0].toLowerCase() + "/"
+                + defect.split("_")[1] + "/stmt-susps.txt";
+        File rfile = new File(result_file);
+
+        rfile.getParentFile().mkdirs();
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(rfile))) {
+            for (String gene : bestPhenotype) {
+                writer.write(gene);
+                writer.newLine();
+            }
+            System.out.println("Results saved to "+ result_file);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 }

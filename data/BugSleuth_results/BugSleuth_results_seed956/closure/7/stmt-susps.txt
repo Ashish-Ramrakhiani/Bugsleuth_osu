@@ -1,0 +1,5 @@
+com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter#612
+com.google.javascript.jscomp.CompilerOptions#1770
+com.google.javascript.jscomp.ClosureCodingConvention#311
+com.google.javascript.jscomp.ClosureCodingConvention#369
+com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter#611

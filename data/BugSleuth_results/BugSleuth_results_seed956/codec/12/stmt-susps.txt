@@ -1,0 +1,5 @@
+org.apache.commons.codec.binary.StringUtils#49
+org.apache.commons.codec.binary.BaseNCodecInputStream#112
+org.apache.commons.codec.binary.BaseNCodecInputStream#90
+org.apache.commons.codec.binary.StringUtils#156
+org.apache.commons.codec.binary.BaseNCodec#82

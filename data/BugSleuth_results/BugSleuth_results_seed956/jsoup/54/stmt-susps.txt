@@ -1,0 +1,5 @@
+org.jsoup.helper.W3CDom#163
+org.jsoup.parser.TokenQueue#354
+org.jsoup.nodes.Node#110
+org.jsoup.select.Selector#149
+org.jsoup.helper.W3CDom#85

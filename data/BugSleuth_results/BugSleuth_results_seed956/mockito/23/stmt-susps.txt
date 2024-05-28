@@ -1,0 +1,5 @@
+org.mockito.internal.creation.jmock.SearchingClassLoader#71
+org.mockito.internal.creation.jmock.SearchingClassLoader#70
+org.mockito.internal.creation.jmock.SearchingClassLoader#20
+org.mockito.internal.util.reflection.FieldInitializer#113
+org.mockito.internal.util.reflection.FieldInitializer#69

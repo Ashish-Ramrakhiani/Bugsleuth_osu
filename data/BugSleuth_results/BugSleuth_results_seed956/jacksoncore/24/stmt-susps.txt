@@ -1,0 +1,5 @@
+com.fasterxml.jackson.core.base.ParserBase#881
+com.fasterxml.jackson.core.exc.InputCoercionException#34
+com.fasterxml.jackson.core.JsonProcessingException#133
+com.fasterxml.jackson.core.base.ParserMinimalBase#598
+com.fasterxml.jackson.core.base.ParserMinimalBase#592

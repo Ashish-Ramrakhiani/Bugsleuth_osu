@@ -1,0 +1,5 @@
+org.mockito.exceptions.Reporter#614
+org.mockito.internal.creation.jmock.SearchingClassLoader#71
+org.mockito.internal.configuration.ClassPathLoader#156
+org.mockito.internal.util.ObjectMethodsGuru#41
+org.mockito.internal.configuration.ClassPathLoader#157

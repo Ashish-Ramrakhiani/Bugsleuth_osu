@@ -1,0 +1,5 @@
+com.google.javascript.rhino.Node#1018
+com.google.javascript.jscomp.Compiler#169
+com.google.javascript.rhino.Node#1019
+com.google.javascript.jscomp.InferJSDocInfo#170
+com.google.javascript.jscomp.InferJSDocInfo#135

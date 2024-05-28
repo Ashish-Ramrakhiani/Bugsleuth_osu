@@ -1,0 +1,5 @@
+org.apache.commons.compress.utils.BitInputStream#96
+org.apache.commons.compress.utils.BitInputStream#108
+org.apache.commons.compress.utils.BitInputStream#83
+org.apache.commons.compress.utils.BitInputStream#94
+org.apache.commons.compress.utils.BitInputStream#93

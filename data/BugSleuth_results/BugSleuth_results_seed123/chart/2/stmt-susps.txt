@@ -1,0 +1,5 @@
+org.jfree.chart.plot.PiePlot#530
+org.jfree.chart.plot.PiePlot#531
+org.jfree.data.xy.XYIntervalSeriesCollection#87
+org.jfree.data.xy.XYIntervalSeries#64
+org.jfree.data.xy.XYIntervalSeriesCollection#89

@@ -2,20 +2,18 @@ package ramrakhiani.bugsleuth.main;
 
 import ramrakhiani.bugsleuth.config.Configuration;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class Population<C extends Chromosome<C>> implements Iterable<C> {
 
     private static final int DEFAULT_NUMBER_OF_CHROMOSOMES = 32;
 
     private List<C> chromosomes = new ArrayList<C>(DEFAULT_NUMBER_OF_CHROMOSOMES);
+    private final Random random;
 
-    private final Random random = new Random(Configuration.seed);
+    public Population(long seed) {
+        this.random = new Random(seed);
+    }
 
     public void addChromosome(C chromosome) {
         this.chromosomes.add(chromosome);
@@ -27,9 +25,7 @@ public class Population<C extends Chromosome<C>> implements Iterable<C> {
 
     public C getRandomChromosome() {
         int numOfChromosomes = this.chromosomes.size();
-        // TODO improve random generator
-        // maybe use pattern strategy ?
-        int indx = this.random.nextInt(numOfChromosomes);
+        int indx = random.nextInt(numOfChromosomes);
         return this.chromosomes.get(indx);
     }
 

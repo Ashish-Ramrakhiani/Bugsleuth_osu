@@ -1,0 +1,5 @@
+org.mockito.internal.creation.jmock.SearchingClassLoader#40
+org.mockito.internal.stubbing.defaultanswers.ReturnsMocks#24
+org.mockito.internal.matchers.apachecommons.EqualsBuilder#363
+org.mockito.internal.stubbing.defaultanswers.ReturnsMocks#22
+org.mockito.internal.util.CreationValidator#29

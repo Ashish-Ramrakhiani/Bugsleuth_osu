@@ -1,0 +1,5 @@
+org.apache.commons.math.complex.Complex#260
+org.apache.commons.math.util.FastMath#1288
+org.apache.commons.math.complex.Complex#587
+org.apache.commons.math.complex.Complex#1183
+org.apache.commons.math.complex.Complex#297

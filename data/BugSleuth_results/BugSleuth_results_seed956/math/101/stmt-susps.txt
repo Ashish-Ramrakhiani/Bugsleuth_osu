@@ -1,0 +1,5 @@
+org.apache.commons.math.complex.ComplexFormat#320
+org.apache.commons.math.complex.ComplexFormat#237
+org.apache.commons.math.complex.ComplexFormat#338
+org.apache.commons.math.complex.ComplexFormat#59
+org.apache.commons.math.complex.ComplexFormat#58

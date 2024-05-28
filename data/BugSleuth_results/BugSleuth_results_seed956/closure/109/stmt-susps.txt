@@ -1,0 +1,5 @@
+com.google.javascript.jscomp.parsing.JsDocInfoParser#2399
+com.google.javascript.jscomp.parsing.JsDocInfoParser#1949
+com.google.javascript.rhino.jstype.JSTypeRegistry#403
+com.google.javascript.jscomp.parsing.JsDocInfoParser#2011
+com.google.javascript.jscomp.TypedScopeCreator#882

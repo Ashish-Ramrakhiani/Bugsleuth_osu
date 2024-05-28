@@ -1,0 +1,5 @@
+com.google.javascript.rhino.ObjToIntMap#260
+com.google.javascript.jscomp.parsing.IRFactory#421
+com.google.javascript.rhino.Context#1079
+com.google.javascript.jscomp.LiveVariablesAnalysis#200
+com.google.javascript.jscomp.LiveVariablesAnalysis#201

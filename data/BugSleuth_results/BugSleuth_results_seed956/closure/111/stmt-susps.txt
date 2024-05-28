@@ -1,0 +1,5 @@
+com.google.javascript.jscomp.type.ClosureReverseAbstractInterpreter#192
+com.google.javascript.jscomp.type.ClosureReverseAbstractInterpreter#54
+com.google.javascript.jscomp.CommandLineRunner#723
+com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter#378
+com.google.javascript.jscomp.AbstractCommandLineRunner#339

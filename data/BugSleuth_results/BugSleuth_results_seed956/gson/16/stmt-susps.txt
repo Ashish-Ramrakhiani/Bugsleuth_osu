@@ -1,0 +1,5 @@
+com.google.gson.internal.Primitives#49
+com.google.gson.internal.$Gson$Types#340
+com.google.gson.Gson#302
+com.google.gson.Gson#423
+com.google.gson.internal.$Gson$Types#341

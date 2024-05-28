@@ -1,0 +1,5 @@
+com.google.gson.stream.JsonReader#218
+com.google.gson.stream.JsonReader#672
+com.google.gson.internal.bind.TypeAdapters#366
+com.google.gson.internal.bind.TypeAdapters#373
+com.google.gson.stream.JsonReader#711

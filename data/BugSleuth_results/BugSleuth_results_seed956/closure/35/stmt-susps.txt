@@ -1,0 +1,5 @@
+com.google.javascript.jscomp.TypeValidator#588
+com.google.javascript.rhino.jstype.RecordType#222
+com.google.javascript.rhino.jstype.RecordType#213
+com.google.javascript.jscomp.TypeValidator#596
+com.google.javascript.jscomp.TypeValidator#613

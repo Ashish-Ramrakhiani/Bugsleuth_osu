@@ -1,0 +1,5 @@
+org.apache.commons.math.stat.descriptive.AbstractUnivariateStatistic#266
+org.apache.commons.math.stat.descriptive.moment.Variance#322
+org.apache.commons.math.stat.descriptive.DescriptiveStatistics#600
+org.apache.commons.math.stat.descriptive.DescriptiveStatistics#417
+org.apache.commons.math.stat.descriptive.AbstractUnivariateStatistic#268

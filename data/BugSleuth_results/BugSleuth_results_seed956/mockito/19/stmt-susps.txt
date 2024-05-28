@@ -1,0 +1,5 @@
+org.mockito.internal.configuration.injection.PropertyAndSetterInjection#71
+org.mockito.internal.configuration.plugins.PluginFileReader#13
+org.mockito.internal.configuration.injection.PropertyAndSetterInjection#101
+org.mockito.internal.configuration.SpyAnnotationEngine#60
+org.mockito.internal.configuration.injection.PropertyAndSetterInjection#112
