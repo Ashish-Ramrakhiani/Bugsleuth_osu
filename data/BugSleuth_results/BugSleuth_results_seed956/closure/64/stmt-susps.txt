@@ -1,5 +1,0 @@
-com.google.javascript.jscomp.Compiler#1705
-com.google.javascript.jscomp.AbstractCommandLineRunner#257
-com.google.javascript.jscomp.parsing.IRFactory#140
-com.google.javascript.jscomp.AbstractCommandLineRunner#258
-com.google.javascript.jscomp.AbstractCommandLineRunner#259

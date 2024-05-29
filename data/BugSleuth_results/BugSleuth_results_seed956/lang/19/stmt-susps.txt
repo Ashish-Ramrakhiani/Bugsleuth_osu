@@ -1,5 +1,0 @@
-org.apache.commons.lang3.StringEscapeUtils#183
-org.apache.commons.lang3.text.translate.NumericEntityUnescaper#44
-org.apache.commons.lang3.StringEscapeUtils#52
-org.apache.commons.lang3.text.translate.NumericEntityUnescaper#41
-org.apache.commons.lang3.text.translate.NumericEntityUnescaper#47

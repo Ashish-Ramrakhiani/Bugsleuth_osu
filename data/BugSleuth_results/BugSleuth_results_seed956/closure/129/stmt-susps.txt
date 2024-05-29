@@ -1,5 +1,0 @@
-com.google.javascript.rhino.Node#1546
-com.google.javascript.jscomp.AbstractCommandLineRunner#178
-com.google.javascript.rhino.Node#2163
-com.google.javascript.jscomp.CompilerOptions#2210
-com.google.javascript.rhino.Node#2164

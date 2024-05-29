@@ -1,5 +1,0 @@
-org.apache.commons.compress.compressors.bzip2.BlockSort#837
-org.apache.commons.compress.compressors.bzip2.BlockSort#835
-org.apache.commons.compress.archivers.sevenz.SevenZOutputFile#523
-org.apache.commons.compress.compressors.bzip2.BlockSort#831
-org.apache.commons.compress.archivers.sevenz.SevenZOutputFile#535

@@ -1,5 +1,0 @@
-com.google.javascript.rhino.Node#1017
-com.google.javascript.jscomp.AliasStrings#75
-com.google.javascript.jscomp.AliasStrings#74
-com.google.javascript.jscomp.CodeGenerator#73
-com.google.javascript.rhino.Node#1011

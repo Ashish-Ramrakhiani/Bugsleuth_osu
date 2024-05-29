@@ -1,5 +1,0 @@
-com.google.javascript.jscomp.RemoveUnusedVars#801
-com.google.javascript.rhino.Node#1006
-com.google.javascript.jscomp.DefaultPassConfig#1547
-com.google.javascript.rhino.Node#1007
-com.google.javascript.jscomp.RemoveUnusedVars#804

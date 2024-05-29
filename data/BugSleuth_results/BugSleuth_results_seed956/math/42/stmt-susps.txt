@@ -1,5 +1,0 @@
-org.apache.commons.math.optimization.linear.SimplexSolver#181
-org.apache.commons.math.linear.Array2DRowRealMatrix#525
-org.apache.commons.math.optimization.linear.SimplexTableau#347
-org.apache.commons.math.optimization.linear.SimplexTableau#214
-org.apache.commons.math.optimization.linear.SimplexTableau#416

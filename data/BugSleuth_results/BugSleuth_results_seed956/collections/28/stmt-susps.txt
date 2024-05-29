@@ -1,5 +1,0 @@
-org.apache.commons.collections4.trie.UnmodifiableTrie#54
-org.apache.commons.collections4.trie.AbstractPatriciaTrie#2406
-org.apache.commons.collections4.trie.PatriciaTrie#62
-org.apache.commons.collections4.trie.PatriciaTrie#66
-org.apache.commons.collections4.trie.UnmodifiableTrie#55

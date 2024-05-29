@@ -1,5 +1,0 @@
-com.google.javascript.jscomp.TypeValidator#552
-com.google.javascript.jscomp.parsing.JsDocInfoParser#1662
-com.google.javascript.jscomp.Scope#268
-com.google.javascript.jscomp.AbstractCommandLineRunner#128
-com.google.javascript.jscomp.CompilerOptions#669

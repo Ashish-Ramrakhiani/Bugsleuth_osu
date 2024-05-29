@@ -1,5 +1,0 @@
-com.google.javascript.jscomp.TypedScopeCreator#1468
-com.google.javascript.rhino.Kit#64
-com.google.javascript.rhino.Kit#63
-com.google.javascript.jscomp.Compiler#174
-com.google.javascript.rhino.jstype.ProxyObjectType#76

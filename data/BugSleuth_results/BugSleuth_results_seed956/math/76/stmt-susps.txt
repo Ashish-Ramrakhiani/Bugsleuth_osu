@@ -1,5 +1,0 @@
-org.apache.commons.math.stat.ranking.NaturalRanking#210
-org.apache.commons.math.stat.ranking.NaturalRanking#385
-org.apache.commons.math.linear.MatrixUtils#206
-org.apache.commons.math.linear.SingularValueDecompositionImpl#288
-org.apache.commons.math.linear.SingularValueDecompositionImpl#143

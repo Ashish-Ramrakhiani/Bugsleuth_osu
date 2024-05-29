@@ -1,5 +1,0 @@
-org.jsoup.Jsoup#73
-org.jsoup.parser.Tokeniser#24
-org.jsoup.parser.HtmlTreeBuilder#229
-org.jsoup.helper.Validate#27
-org.jsoup.parser.HtmlTreeBuilder#82

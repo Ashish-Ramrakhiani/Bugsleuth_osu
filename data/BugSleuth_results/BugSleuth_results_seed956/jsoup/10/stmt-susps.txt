@@ -1,5 +1,0 @@
-org.jsoup.nodes.Node#173
-org.jsoup.nodes.Node#164
-org.jsoup.nodes.Node#159
-org.jsoup.nodes.Node#162
-org.jsoup.nodes.Node#167

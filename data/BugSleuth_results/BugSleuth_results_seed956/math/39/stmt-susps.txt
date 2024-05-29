@@ -1,5 +1,0 @@
-org.apache.commons.math.util.FastMath#3267
-org.apache.commons.math.util.FastMath#3264
-org.apache.commons.math.ode.nonstiff.GraggBulirschStoerIntegrator#837
-org.apache.commons.math.ode.nonstiff.GraggBulirschStoerIntegrator#834
-org.apache.commons.math.util.FastMath#3259

@@ -1,5 +1,0 @@
-com.google.javascript.rhino.JSDocInfo#1358
-com.google.javascript.jscomp.ProcessClosurePrimitives#675
-com.google.javascript.jscomp.ProcessClosurePrimitives#102
-com.google.javascript.rhino.JSDocInfo#1356
-com.google.javascript.jscomp.ProcessClosurePrimitives#107

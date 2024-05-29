@@ -1,5 +1,0 @@
-org.jsoup.nodes.Node#158
-org.jsoup.select.QueryParser#156
-org.jsoup.select.QueryParser#157
-org.jsoup.select.Elements#55
-org.jsoup.select.QueryParser#158

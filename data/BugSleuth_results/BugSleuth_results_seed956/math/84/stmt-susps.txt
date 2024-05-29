@@ -1,5 +1,0 @@
-org.apache.commons.math.optimization.direct.MultiDirectional#131
-org.apache.commons.math.optimization.direct.MultiDirectional#74
-org.apache.commons.math.optimization.direct.MultiDirectional#132
-org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator#299
-org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator#289

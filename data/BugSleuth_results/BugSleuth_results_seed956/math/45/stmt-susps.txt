@@ -1,5 +1,0 @@
-org.apache.commons.math.linear.OpenMapRealMatrix#50
-org.apache.commons.math.linear.OpenMapRealMatrix#131
-org.apache.commons.math.linear.OpenMapRealMatrix#97
-org.apache.commons.math.linear.SparseFieldMatrix#74
-org.apache.commons.math.linear.OpenMapRealMatrix#49

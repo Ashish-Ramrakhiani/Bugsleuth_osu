@@ -1,5 +1,0 @@
-com.google.javascript.rhino.jstype.UnionType#287
-com.google.javascript.jscomp.NameAnalyzer#1183
-com.google.javascript.rhino.jstype.UnionType#276
-com.google.javascript.rhino.jstype.UnionType#281
-com.google.javascript.jscomp.CodeGenerator#705

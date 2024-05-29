@@ -1,5 +1,0 @@
-org.apache.commons.compress.archivers.ArchiveStreamFactory#195
-org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream#123
-org.apache.commons.compress.archivers.jar.JarArchiveInputStream#53
-org.apache.commons.compress.archivers.ArchiveStreamFactory#282
-org.apache.commons.compress.archivers.ArchiveStreamFactory#236

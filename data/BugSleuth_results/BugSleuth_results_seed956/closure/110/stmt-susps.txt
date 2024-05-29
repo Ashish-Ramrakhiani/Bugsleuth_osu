@@ -1,5 +1,0 @@
-com.google.javascript.jscomp.NameAnalyzer#1116
-com.google.javascript.jscomp.CompilerOptions#1968
-com.google.javascript.jscomp.ScopedAliases#366
-com.google.javascript.jscomp.CompilerOptions#1969
-com.google.javascript.jscomp.ScopedAliases#348

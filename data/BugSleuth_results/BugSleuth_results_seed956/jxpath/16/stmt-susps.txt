@@ -1,5 +1,0 @@
-org.apache.commons.jxpath.ri.axes.PrecedingOrFollowingContext#70
-org.apache.commons.jxpath.ri.model.dom.DOMNodePointer#143
-org.apache.commons.jxpath.ri.JXPathContextReferenceImpl#76
-org.apache.commons.jxpath.ri.axes.PrecedingOrFollowingContext#74
-org.apache.commons.jxpath.ri.JXPathContextReferenceImpl#83

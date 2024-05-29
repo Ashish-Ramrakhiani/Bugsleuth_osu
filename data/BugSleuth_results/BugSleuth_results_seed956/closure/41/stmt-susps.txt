@@ -1,5 +1,0 @@
-com.google.javascript.jscomp.MethodCompilerPass#163
-com.google.javascript.jscomp.MethodCompilerPass#112
-com.google.javascript.jscomp.TypeValidator#693
-com.google.javascript.jscomp.TypeValidator#700
-com.google.javascript.rhino.jstype.FunctionType#365

@@ -1,5 +1,0 @@
-org.apache.commons.jxpath.ri.compiler.CoreOperationCompare#97
-org.apache.commons.jxpath.ri.compiler.CoreFunction#714
-org.apache.commons.jxpath.ri.compiler.CoreFunction#713
-org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression#111
-org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression#112

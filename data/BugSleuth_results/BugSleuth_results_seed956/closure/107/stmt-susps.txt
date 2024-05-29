@@ -1,5 +1,0 @@
-com.google.javascript.jscomp.JsMessageVisitor#944
-com.google.javascript.jscomp.JsMessageVisitor#186
-com.google.javascript.jscomp.JsMessageVisitor#196
-com.google.javascript.jscomp.JsMessageVisitor#939
-com.google.javascript.jscomp.JsMessageVisitor#940

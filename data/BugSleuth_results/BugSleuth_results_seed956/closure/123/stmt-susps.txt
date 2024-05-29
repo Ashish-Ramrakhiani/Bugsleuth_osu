@@ -1,5 +1,0 @@
-com.google.javascript.jscomp.AbstractCommandLineRunner#717
-com.google.javascript.jscomp.CodeGenerator#272
-com.google.javascript.jscomp.CompilerOptions#906
-com.google.javascript.jscomp.NodeUtil#2205
-com.google.javascript.jscomp.AbstractCommandLineRunner#715

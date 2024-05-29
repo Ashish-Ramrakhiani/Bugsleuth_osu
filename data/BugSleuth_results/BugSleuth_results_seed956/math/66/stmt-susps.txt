@@ -1,5 +1,0 @@
-org.apache.commons.math.ConvergingAlgorithmImpl#82
-org.apache.commons.math.analysis.solvers.UnivariateRealSolverFactoryImpl#38
-org.apache.commons.math.optimization.univariate.BrentOptimizer#65
-org.apache.commons.math.optimization.univariate.AbstractUnivariateRealOptimizer#152
-org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizer#80

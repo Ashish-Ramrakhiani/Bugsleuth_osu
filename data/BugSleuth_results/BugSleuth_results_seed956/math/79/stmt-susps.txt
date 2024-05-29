@@ -1,5 +1,0 @@
-org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer#155
-org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer#114
-org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer#89
-org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer#112
-org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer#64

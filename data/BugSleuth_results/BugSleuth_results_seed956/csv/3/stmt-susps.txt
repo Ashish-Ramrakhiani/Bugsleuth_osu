@@ -1,5 +1,0 @@
-org.apache.commons.csv.CSVFormat#275
-org.apache.commons.csv.CSVFormat#171
-org.apache.commons.csv.CSVLexer#170
-org.apache.commons.csv.CSVLexer#211
-org.apache.commons.csv.CSVLexer#215

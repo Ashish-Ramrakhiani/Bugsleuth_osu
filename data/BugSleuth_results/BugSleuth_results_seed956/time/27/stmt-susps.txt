@@ -1,5 +1,0 @@
-org.joda.time.format.PeriodFormatterBuilder#555
-org.joda.time.format.PeriodFormatterBuilder#1351
-org.joda.time.format.PeriodFormatterBuilder#196
-org.joda.time.format.PeriodFormatterBuilder#1070
-org.joda.time.format.PeriodFormatterBuilder#1736

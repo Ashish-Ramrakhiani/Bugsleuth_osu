@@ -1,5 +1,0 @@
-org.jsoup.parser.Tokeniser#135
-org.jsoup.parser.Tokeniser#153
-org.jsoup.nodes.Entities#72
-org.jsoup.parser.Tokeniser#111
-org.jsoup.parser.Tokeniser#109

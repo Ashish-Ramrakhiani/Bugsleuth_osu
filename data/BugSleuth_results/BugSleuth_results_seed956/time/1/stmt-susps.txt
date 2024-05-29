@@ -1,5 +1,0 @@
-org.joda.time.field.UnsupportedDurationField#227
-org.joda.time.format.DateTimeFormatterBuilder#1936
-org.joda.time.format.DateTimeFormatterBuilder#1808
-org.joda.time.DateTimeZone#488
-org.joda.time.DateTimeZone#474

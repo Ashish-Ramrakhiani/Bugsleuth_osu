@@ -1,5 +1,0 @@
-com.google.javascript.jscomp.parsing.JsDocInfoParser#348
-com.google.javascript.rhino.Node#1852
-com.google.javascript.rhino.Node#1848
-com.google.javascript.jscomp.CodeGenerator#355
-com.google.javascript.jscomp.CodeGenerator#49

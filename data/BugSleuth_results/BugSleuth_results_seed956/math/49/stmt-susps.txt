@@ -1,5 +1,0 @@
-org.apache.commons.math.linear.MatrixUtils#795
-org.apache.commons.math.MathRuntimeException#460
-org.apache.commons.math.MathRuntimeException#462
-org.apache.commons.math.linear.OpenMapRealVector#380
-org.apache.commons.math.linear.OpenMapRealVector#370

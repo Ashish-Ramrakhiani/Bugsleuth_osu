@@ -1,5 +1,0 @@
-com.google.javascript.rhino.Node#1369
-com.google.javascript.jscomp.TightenTypes#950
-com.google.javascript.rhino.Node#220
-com.google.javascript.jscomp.NameReferenceGraphReport#198
-com.google.javascript.rhino.Node#1064

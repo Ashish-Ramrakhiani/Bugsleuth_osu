@@ -1,5 +1,0 @@
-org.apache.commons.math.stat.ranking.NaturalRanking#144
-org.apache.commons.math.util.MathUtils#1263
-org.apache.commons.math.util.MathUtils#526
-org.apache.commons.math.util.MathUtils#1282
-org.apache.commons.math.util.MathUtils#534

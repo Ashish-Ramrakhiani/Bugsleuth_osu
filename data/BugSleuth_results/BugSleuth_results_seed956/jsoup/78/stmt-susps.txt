@@ -1,5 +1,0 @@
-org.jsoup.helper.HttpConnection#798
-org.jsoup.helper.HttpConnection#982
-org.jsoup.Connection#46
-org.jsoup.helper.HttpConnection#830
-org.jsoup.helper.HttpConnection#980

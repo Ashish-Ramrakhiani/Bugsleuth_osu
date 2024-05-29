@@ -1,5 +1,0 @@
-com.fasterxml.jackson.core.JsonFactory#215
-com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer#1109
-com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer#1124
-com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer#1129
-com.fasterxml.jackson.core.JsonFactory#216

@@ -1,5 +1,0 @@
-org.apache.commons.compress.utils.ChecksumCalculatingInputStream#33
-org.apache.commons.compress.utils.ChecksumCalculatingInputStream#38
-org.apache.commons.compress.utils.ChecksumCalculatingInputStream#37
-org.apache.commons.compress.archivers.zip.ZipFile#457
-org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStream#250

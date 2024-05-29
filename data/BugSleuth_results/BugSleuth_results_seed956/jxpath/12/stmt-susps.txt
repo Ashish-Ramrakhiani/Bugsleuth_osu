@@ -1,5 +1,0 @@
-org.apache.commons.jxpath.ri.JXPathContextReferenceImpl#83
-org.apache.commons.jxpath.ri.model.dom.DOMNodePointer#598
-org.apache.commons.jxpath.ri.NamespaceResolver#61
-org.apache.commons.jxpath.JXPathException#89
-org.apache.commons.jxpath.JXPathException#115

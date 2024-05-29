@@ -1,5 +1,0 @@
-com.google.javascript.jscomp.parsing.ParserRunner#107
-com.google.javascript.jscomp.parsing.TypeSafeDispatcher#198
-com.google.javascript.jscomp.JsMessageVisitor#251
-com.google.javascript.jscomp.parsing.ParserRunner#108
-com.google.javascript.jscomp.JsMessageVisitor#755

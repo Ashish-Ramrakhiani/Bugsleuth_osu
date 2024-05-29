@@ -1,5 +1,0 @@
-org.mockito.Matchers#202
-org.mockito.internal.verification.argumentmatching.ArgumentMatchingTool#30
-org.mockito.internal.util.copy.LenientCopyTool#27
-org.mockito.internal.util.copy.LenientCopyTool#37
-org.mockito.internal.verification.argumentmatching.ArgumentMatchingTool#29

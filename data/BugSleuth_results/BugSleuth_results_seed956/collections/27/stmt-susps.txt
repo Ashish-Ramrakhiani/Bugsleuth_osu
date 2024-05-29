@@ -1,5 +1,0 @@
-org.apache.commons.collections4.map.AbstractMapDecorator#130
-org.apache.commons.collections4.functors.PrototypeFactory#79
-org.apache.commons.collections4.map.MultiValueMap#164
-org.apache.commons.collections4.map.MultiValueMap#163
-org.apache.commons.collections4.map.AbstractMapDecorator#51

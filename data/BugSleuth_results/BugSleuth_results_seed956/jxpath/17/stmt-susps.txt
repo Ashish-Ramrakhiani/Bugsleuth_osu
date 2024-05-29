@@ -1,5 +1,0 @@
-org.apache.commons.jxpath.ri.model.dom.DOMNodePointer#253
-org.apache.commons.jxpath.ri.parser.XPathParserTokenManager#997
-org.apache.commons.jxpath.ri.compiler.CoreFunction#456
-org.apache.commons.jxpath.ri.compiler.CoreFunction#457
-org.apache.commons.jxpath.ri.compiler.CoreFunction#458

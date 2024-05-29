@@ -1,5 +1,0 @@
-com.google.javascript.jscomp.AbstractCommandLineRunner#396
-com.google.javascript.rhino.Node#1004
-com.google.javascript.jscomp.RescopeGlobalSymbols#294
-com.google.javascript.rhino.Node#1017
-com.google.javascript.jscomp.AbstractCommandLineRunner#397

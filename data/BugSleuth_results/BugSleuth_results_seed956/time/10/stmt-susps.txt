@@ -1,5 +1,0 @@
-org.joda.time.IllegalFieldValueException#41
-org.joda.time.IllegalFieldValueException#44
-org.joda.time.IllegalFieldValueException#42
-org.joda.time.tz.ZoneInfoCompiler#583
-org.joda.time.DateTimeZone#462

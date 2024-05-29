@@ -1,5 +1,0 @@
-org.mockito.internal.creation.AcrossJVMSerializationFeature#342
-org.mockito.internal.creation.jmock.SearchingClassLoader#56
-org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#99
-org.mockito.internal.creation.AcrossJVMSerializationFeature#340
-org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#70

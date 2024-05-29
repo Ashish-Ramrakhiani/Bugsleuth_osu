@@ -1,5 +1,0 @@
-com.google.javascript.rhino.Node#1017
-com.google.javascript.jscomp.NodeUtil#1978
-com.google.javascript.jscomp.NodeUtil#845
-com.google.javascript.rhino.Node#1016
-com.google.javascript.rhino.Node#117

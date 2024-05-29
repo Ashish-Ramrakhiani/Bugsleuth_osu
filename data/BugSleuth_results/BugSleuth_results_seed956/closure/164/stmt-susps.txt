@@ -1,5 +1,0 @@
-com.google.javascript.jscomp.FunctionTypeBuilder#281
-com.google.javascript.rhino.jstype.FunctionType#718
-com.google.javascript.jscomp.FunctionTypeBuilder#462
-com.google.javascript.jscomp.ProcessTweaks#500
-com.google.javascript.jscomp.ProcessTweaks#489

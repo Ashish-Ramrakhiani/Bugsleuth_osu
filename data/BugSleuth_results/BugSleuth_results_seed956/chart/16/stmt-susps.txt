@@ -1,5 +1,0 @@
-org.jfree.data.category.DefaultIntervalCategoryDataset#163
-org.jfree.data.general.AbstractSeriesDataset#66
-org.jfree.data.category.DefaultIntervalCategoryDataset#712
-org.jfree.data.category.DefaultIntervalCategoryDataset#150
-org.jfree.data.category.DefaultIntervalCategoryDataset#145

@@ -1,5 +1,0 @@
-com.google.javascript.jscomp.CompilerOptions#587
-com.google.javascript.jscomp.CreateSyntheticBlocks#36
-com.google.javascript.rhino.Node#1330
-com.google.javascript.jscomp.CompilerOptions#157
-com.google.javascript.jscomp.CreateSyntheticBlocks#79

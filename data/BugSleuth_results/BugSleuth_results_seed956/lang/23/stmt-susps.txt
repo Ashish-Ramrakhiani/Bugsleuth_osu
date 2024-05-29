@@ -1,5 +1,0 @@
-org.apache.commons.lang3.text.ExtendedMessageFormat#378
-org.apache.commons.lang3.text.ExtendedMessageFormat#124
-org.apache.commons.lang3.text.ExtendedMessageFormat#498
-org.apache.commons.lang3.text.ExtendedMessageFormat#499
-org.apache.commons.lang3.text.ExtendedMessageFormat#355

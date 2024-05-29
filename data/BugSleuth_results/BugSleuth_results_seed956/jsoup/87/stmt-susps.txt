@@ -1,5 +1,0 @@
-org.jsoup.parser.Parser#207
-org.jsoup.safety.Whitelist#109
-org.jsoup.safety.Whitelist#110
-org.jsoup.safety.Whitelist#154
-org.jsoup.nodes.Document#94

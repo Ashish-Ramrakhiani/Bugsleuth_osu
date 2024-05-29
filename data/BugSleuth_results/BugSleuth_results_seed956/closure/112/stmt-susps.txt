@@ -1,5 +1,0 @@
-com.google.javascript.rhino.jstype.TemplateTypeMapReplacer#74
-com.google.javascript.jscomp.FunctionTypeBuilder#351
-com.google.javascript.rhino.jstype.JSType#621
-com.google.javascript.jscomp.FunctionTypeBuilder#352
-com.google.javascript.jscomp.TypeInference#1061

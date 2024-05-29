@@ -1,5 +1,0 @@
-com.google.javascript.rhino.jstype.ObjectType#576
-com.google.javascript.jscomp.Tracer#494
-com.google.javascript.jscomp.TypeCheck#1658
-com.google.javascript.jscomp.Compiler#217
-com.google.javascript.jscomp.Compiler#95

@@ -1,5 +1,0 @@
-org.apache.commons.codec.binary.StringUtils#81
-org.apache.commons.codec.binary.CharSequenceUtils#60
-org.apache.commons.codec.binary.CharSequenceUtils#51
-org.apache.commons.codec.language.bm.Rule#721
-org.apache.commons.codec.binary.CharSequenceUtils#62

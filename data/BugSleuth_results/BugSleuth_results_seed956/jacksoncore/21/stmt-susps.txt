@@ -1,5 +1,0 @@
-com.fasterxml.jackson.core.filter.FilteringParserDelegate#116
-com.fasterxml.jackson.core.filter.FilteringParserDelegate#589
-com.fasterxml.jackson.core.filter.FilteringGeneratorDelegate#852
-com.fasterxml.jackson.core.filter.FilteringGeneratorDelegate#833
-com.fasterxml.jackson.core.filter.FilteringParserDelegate#302

@@ -1,5 +1,0 @@
-org.apache.commons.cli.TypeHandler#103
-org.apache.commons.cli.TypeHandler#69
-org.apache.commons.cli.TypeHandler#97
-org.apache.commons.cli.TypeHandler#65
-org.apache.commons.cli.TypeHandler#73

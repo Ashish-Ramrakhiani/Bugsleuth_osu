@@ -1,5 +1,0 @@
-org.jfree.chart.plot.PiePlot#531
-org.jfree.chart.axis.SymbolAxis#597
-org.jfree.chart.axis.SymbolAxis#691
-org.jfree.data.xy.XYIntervalSeriesCollection#87
-org.jfree.data.xy.XYIntervalSeries#64

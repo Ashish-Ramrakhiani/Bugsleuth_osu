@@ -1,5 +1,0 @@
-org.apache.commons.math.ConvergenceException#62
-org.apache.commons.math.util.FastMath#677
-org.apache.commons.math.util.ContinuedFraction#163
-org.apache.commons.math.ConvergenceException#63
-org.apache.commons.math.util.FastMath#680

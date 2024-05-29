@@ -1,5 +1,0 @@
-com.google.javascript.jscomp.ScopedAliases#543
-com.google.javascript.jscomp.ScopedAliases#410
-com.google.javascript.jscomp.ScopedAliases#430
-com.google.javascript.jscomp.ScopedAliases#523
-com.google.javascript.jscomp.ScopedAliases#104

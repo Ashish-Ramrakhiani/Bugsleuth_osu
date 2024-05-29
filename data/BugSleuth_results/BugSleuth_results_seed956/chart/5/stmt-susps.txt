@@ -1,5 +1,0 @@
-org.jfree.data.xy.XYSeries#346
-org.jfree.data.xy.XYSeries#563
-org.jfree.data.xy.XYSeries#352
-org.jfree.data.xy.XYSeries#564
-org.jfree.data.xy.XYSeries#354

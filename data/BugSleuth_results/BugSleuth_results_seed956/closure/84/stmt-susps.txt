@@ -1,5 +1,0 @@
-com.google.javascript.jscomp.TypeValidator#76
-com.google.javascript.jscomp.parsing.IRFactory#858
-com.google.javascript.jscomp.TypeValidator#465
-com.google.javascript.jscomp.TypeValidator#77
-com.google.javascript.jscomp.testing.TestErrorReporter#50

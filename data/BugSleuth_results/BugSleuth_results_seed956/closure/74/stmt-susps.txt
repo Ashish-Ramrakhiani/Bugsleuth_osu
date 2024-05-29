@@ -1,5 +1,0 @@
-com.google.javascript.jscomp.PeepholeFoldConstants#1061
-com.google.javascript.jscomp.NodeIterators#200
-com.google.javascript.rhino.ScriptRuntime#119
-com.google.javascript.jscomp.PeepholeFoldConstants#930
-com.google.javascript.jscomp.NodeIterators#209

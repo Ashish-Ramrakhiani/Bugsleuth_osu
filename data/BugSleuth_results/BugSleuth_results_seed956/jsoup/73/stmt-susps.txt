@@ -1,5 +1,0 @@
-org.jsoup.helper.W3CDom#138
-org.jsoup.parser.HtmlTreeBuilderState#1475
-org.jsoup.helper.W3CDom#80
-org.jsoup.helper.W3CDom#81
-org.jsoup.helper.W3CDom#161

@@ -1,5 +1,0 @@
-org.apache.commons.lang.time.FastDateFormat#1710
-org.apache.commons.lang.time.FastDateFormat#459
-org.apache.commons.lang.time.FastDateFormat#620
-org.apache.commons.lang.time.FastDateFormat#366
-org.apache.commons.lang.time.FastDateFormat#1711

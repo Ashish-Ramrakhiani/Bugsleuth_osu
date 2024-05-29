@@ -1,5 +1,0 @@
-org.jsoup.parser.ParseError#13
-org.jsoup.parser.HtmlTreeBuilder#225
-org.jsoup.parser.ParseError#11
-org.jsoup.parser.ParseError#10
-org.jsoup.parser.HtmlTreeBuilder#229

@@ -1,5 +1,0 @@
-com.google.javascript.jscomp.parsing.IRFactory#946
-com.google.javascript.rhino.Node#275
-com.google.javascript.jscomp.AbstractCommandLineRunner#617
-com.google.javascript.jscomp.parsing.IRFactory#1121
-com.google.debugging.sourcemap.SourceMapGeneratorV2#555

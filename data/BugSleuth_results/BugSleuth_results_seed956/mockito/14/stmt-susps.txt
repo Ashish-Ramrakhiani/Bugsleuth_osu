@@ -1,5 +1,0 @@
-org.mockito.exceptions.Reporter#246
-org.mockito.exceptions.verification.WantedButNotInvoked#20
-org.mockito.exceptions.Reporter#257
-org.mockito.internal.creation.jmock.ClassImposterizer#65
-org.mockito.internal.creation.jmock.ClassImposterizer#64

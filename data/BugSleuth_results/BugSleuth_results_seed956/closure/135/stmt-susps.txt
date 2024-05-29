@@ -1,5 +1,0 @@
-com.google.javascript.rhino.jstype.JSTypeRegistry#914
-com.google.javascript.jscomp.TypeValidator#397
-com.google.javascript.jscomp.TypeValidator#401
-com.google.javascript.jscomp.TypedScopeCreator#767
-com.google.javascript.jscomp.DevirtualizePrototypeMethods#344

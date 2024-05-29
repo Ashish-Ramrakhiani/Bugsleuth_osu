@@ -1,5 +1,0 @@
-com.google.javascript.rhino.Node#117
-com.google.javascript.rhino.Node#1016
-com.google.javascript.rhino.Node#1011
-com.google.javascript.jscomp.TypedScopeCreator#1953
-com.google.javascript.jscomp.TypedScopeCreator#1950

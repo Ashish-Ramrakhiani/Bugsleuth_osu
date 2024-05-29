@@ -1,5 +1,0 @@
-com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider#157
-com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider#67
-com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider#207
-com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider#205
-com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider#69

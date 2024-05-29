@@ -1,5 +1,0 @@
-com.google.javascript.rhino.jstype.PrototypeObjectType#385
-com.google.javascript.jscomp.AbstractCommandLineRunner#641
-com.google.javascript.jscomp.AbstractCommandLineRunner#322
-com.google.javascript.rhino.jstype.ProxyObjectType#258
-com.google.javascript.rhino.jstype.JSType#1165

@@ -1,5 +1,0 @@
-com.google.javascript.jscomp.Compiler#174
-com.google.javascript.jscomp.NodeTraversal#246
-com.google.javascript.jscomp.NodeTraversal#291
-com.google.javascript.jscomp.NodeTraversal#243
-com.google.javascript.jscomp.NodeTraversal#290

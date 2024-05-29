@@ -1,5 +1,0 @@
-org.mockito.internal.creation.jmock.ClassImposterizer#86
-org.mockito.internal.creation.jmock.ClassImposterizer#63
-org.mockito.internal.creation.jmock.ClassImposterizer#87
-org.mockito.runners.ConsoleSpammingMockitoJUnitRunner#96
-org.mockito.internal.stubbing.answers.AnswersValidator#24

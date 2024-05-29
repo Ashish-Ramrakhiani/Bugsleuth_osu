@@ -1,5 +1,0 @@
-com.google.javascript.jscomp.SourceFile#305
-com.google.javascript.jscomp.AstValidator#675
-com.google.javascript.jscomp.AstValidator#404
-com.google.javascript.rhino.Node#628
-com.google.javascript.rhino.Node#629

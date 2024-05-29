@@ -1,5 +1,0 @@
-org.apache.commons.compress.compressors.deflate.DeflateParameters#37
-org.apache.commons.compress.compressors.CompressorException#38
-org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream#69
-org.apache.commons.compress.compressors.deflate.DeflateParameters#50
-org.apache.commons.compress.compressors.deflate.DeflateParameters#30

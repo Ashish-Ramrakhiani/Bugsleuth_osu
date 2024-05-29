@@ -1,5 +1,0 @@
-com.google.javascript.rhino.jstype.PrototypeObjectType#571
-com.google.javascript.jscomp.ProcessTweaks#484
-com.google.javascript.jscomp.ProcessTweaks#498
-com.google.javascript.jscomp.ProcessTweaks#485
-com.google.javascript.rhino.jstype.PrototypeObjectType#592

@@ -1,5 +1,0 @@
-com.google.javascript.jscomp.FunctionRewriter#72
-com.google.javascript.jscomp.FunctionRewriter#57
-com.google.javascript.jscomp.FunctionRewriter#68
-com.google.javascript.rhino.Node#1017
-com.google.javascript.jscomp.FunctionRewriter#94

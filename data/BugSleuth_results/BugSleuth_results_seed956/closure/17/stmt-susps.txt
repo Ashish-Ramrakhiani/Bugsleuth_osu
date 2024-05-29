@@ -1,5 +1,0 @@
-com.google.javascript.rhino.jstype.PrototypeObjectType#375
-com.google.javascript.jscomp.TypeValidator#205
-com.google.javascript.jscomp.jsonml.Reader#579
-com.google.javascript.jscomp.TypedScopeCreator#1291
-com.google.javascript.jscomp.jsonml.Reader#505

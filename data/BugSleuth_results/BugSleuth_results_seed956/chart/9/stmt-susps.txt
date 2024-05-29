@@ -1,5 +1,0 @@
-org.jfree.data.time.TimeSeries#927
-org.jfree.data.time.TimeSeries#939
-org.jfree.data.time.TimeSeries#919
-org.jfree.data.time.TimeSeries#947
-org.jfree.data.time.TimeSeries#889

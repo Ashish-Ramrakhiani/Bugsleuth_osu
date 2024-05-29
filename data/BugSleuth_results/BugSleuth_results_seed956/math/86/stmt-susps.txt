@@ -1,5 +1,0 @@
-org.apache.commons.math.linear.CholeskyDecompositionImpl#110
-org.apache.commons.math.linear.CholeskyDecompositionImpl#115
-org.apache.commons.math.linear.CholeskyDecompositionImpl#73
-org.apache.commons.math.linear.AbstractRealMatrix#995
-org.apache.commons.math.linear.CholeskyDecompositionImpl#74

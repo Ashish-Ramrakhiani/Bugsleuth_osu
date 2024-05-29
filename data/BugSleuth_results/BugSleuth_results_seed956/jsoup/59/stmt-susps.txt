@@ -1,5 +1,0 @@
-org.jsoup.helper.HttpConnection#100
-org.jsoup.helper.Validate#92
-org.jsoup.nodes.Entities#121
-org.jsoup.helper.HttpConnection#101
-org.jsoup.helper.HttpConnection#96

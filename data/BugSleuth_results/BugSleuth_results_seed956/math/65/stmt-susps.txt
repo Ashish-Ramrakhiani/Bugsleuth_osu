@@ -1,5 +1,0 @@
-org.apache.commons.math.linear.LUDecompositionImpl#385
-org.apache.commons.math.linear.LUDecompositionImpl#386
-org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer#256
-org.apache.commons.math.estimation.AbstractEstimator#196
-org.apache.commons.math.linear.LUDecompositionImpl#387

@@ -1,5 +1,0 @@
-org.jsoup.nodes.Entities#77
-org.jsoup.nodes.Entities#2262
-org.jsoup.nodes.Entities#79
-org.jsoup.nodes.Entities#75
-org.jsoup.nodes.Entities#2252

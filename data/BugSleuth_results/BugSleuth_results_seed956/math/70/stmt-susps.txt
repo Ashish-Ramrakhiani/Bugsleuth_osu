@@ -1,5 +1,0 @@
-org.apache.commons.math.analysis.solvers.BisectionSolver#86
-org.apache.commons.math.analysis.solvers.BisectionSolver#77
-org.apache.commons.math.analysis.solvers.MullerSolver#102
-org.apache.commons.math.analysis.solvers.BisectionSolver#72
-org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils#223

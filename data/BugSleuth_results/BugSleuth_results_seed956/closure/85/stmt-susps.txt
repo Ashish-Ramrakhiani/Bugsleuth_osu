@@ -1,5 +1,0 @@
-com.google.javascript.jscomp.Compiler#1681
-com.google.javascript.rhino.Node#963
-com.google.javascript.rhino.Node#917
-com.google.javascript.jscomp.Compiler#1680
-com.google.javascript.jscomp.Compiler#1679

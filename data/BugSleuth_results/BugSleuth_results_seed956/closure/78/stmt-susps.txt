@@ -1,5 +1,0 @@
-com.google.javascript.rhino.ScriptRuntime#204
-com.google.javascript.jscomp.PeepholeFoldConstants#722
-com.google.javascript.jscomp.PeepholeFoldConstants#721
-com.google.javascript.jscomp.PeepholeFoldConstants#719
-com.google.javascript.rhino.ScriptRuntime#215

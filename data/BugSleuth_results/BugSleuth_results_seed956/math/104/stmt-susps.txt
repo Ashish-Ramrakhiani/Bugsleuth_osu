@@ -1,5 +1,0 @@
-org.apache.commons.math.special.Gamma#243
-org.apache.commons.math.special.Gamma#200
-org.apache.commons.math.special.Gamma#237
-org.apache.commons.math.special.Gamma#120
-org.apache.commons.math.special.Gamma#119

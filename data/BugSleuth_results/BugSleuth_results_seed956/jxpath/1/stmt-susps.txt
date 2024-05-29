@@ -1,5 +1,0 @@
-org.apache.commons.jxpath.xml.DOMParser#31
-org.apache.commons.jxpath.xml.DOMParser#38
-org.apache.commons.jxpath.ri.parser.XPathParser#765
-org.apache.commons.jxpath.ri.parser.XPathParser#799
-org.apache.commons.jxpath.ri.parser.XPathParser#850

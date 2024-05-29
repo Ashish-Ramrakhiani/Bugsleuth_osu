@@ -1,5 +1,0 @@
-com.google.javascript.jscomp.parsing.IRFactory#252
-com.google.javascript.rhino.jstype.SimpleSourceFile#52
-com.google.javascript.jscomp.parsing.JsDocInfoParser#143
-com.google.javascript.jscomp.parsing.IRFactory#201
-com.google.javascript.rhino.jstype.SimpleSourceFile#51

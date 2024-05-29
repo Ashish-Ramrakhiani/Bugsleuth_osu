@@ -1,5 +1,0 @@
-com.google.javascript.jscomp.NameReferenceGraphConstruction#484
-com.google.javascript.jscomp.parsing.JsDocInfoParser#426
-com.google.javascript.rhino.JSDocInfo#103
-com.google.javascript.rhino.JSDocInfo#1054
-com.google.javascript.jscomp.parsing.JsDocInfoParser#427

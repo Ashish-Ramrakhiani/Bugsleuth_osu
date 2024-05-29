@@ -1,5 +1,0 @@
-com.google.javascript.jscomp.ClosureCodingConvention#185
-com.google.javascript.jscomp.Compiler#1833
-com.google.javascript.jscomp.Compiler#1834
-com.google.javascript.jscomp.ClosureCodingConvention#192
-com.google.javascript.jscomp.ClosureCodingConvention#193

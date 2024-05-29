@@ -1,5 +1,0 @@
-org.jfree.chart.plot.MultiplePiePlot#568
-org.jfree.data.general.AbstractDataset#161
-org.jfree.data.general.AbstractDataset#160
-org.jfree.chart.plot.MultiplePiePlot#565
-org.jfree.chart.plot.MultiplePiePlot#329

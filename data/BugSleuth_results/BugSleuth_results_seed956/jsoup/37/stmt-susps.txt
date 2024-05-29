@@ -1,5 +1,0 @@
-org.jsoup.nodes.Document#305
-org.jsoup.nodes.Document#295
-org.jsoup.parser.HtmlTreeBuilderState#256
-org.jsoup.nodes.TextNode#100
-org.jsoup.parser.HtmlTreeBuilderState#257

@@ -1,5 +1,0 @@
-org.jsoup.nodes.Element#294
-org.jsoup.nodes.Node#295
-org.jsoup.parser.Parser#231
-org.jsoup.nodes.Element#292
-org.jsoup.nodes.TextNode#72

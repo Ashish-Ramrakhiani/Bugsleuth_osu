@@ -1,5 +1,0 @@
-org.jsoup.nodes.Document#125
-org.jsoup.nodes.Document#126
-org.jsoup.parser.Parser#66
-org.jsoup.parser.Parser#67
-org.jsoup.parser.Parser#76

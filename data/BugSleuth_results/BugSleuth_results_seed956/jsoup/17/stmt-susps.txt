@@ -1,5 +1,0 @@
-org.jsoup.parser.TreeBuilderState#252
-org.jsoup.Connection#220
-org.jsoup.parser.TreeBuilder#522
-org.jsoup.parser.TreeBuilderState#253
-org.jsoup.parser.TreeBuilderState#234

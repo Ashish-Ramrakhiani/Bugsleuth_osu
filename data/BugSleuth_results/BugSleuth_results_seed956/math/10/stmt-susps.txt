@@ -1,5 +1,0 @@
-org.apache.commons.math3.dfp.DfpMath#921
-org.apache.commons.math3.analysis.differentiation.DerivativeStructure#759
-org.apache.commons.math3.analysis.differentiation.DerivativeStructure#758
-org.apache.commons.math3.analysis.differentiation.DerivativeStructure#756
-org.apache.commons.math3.analysis.differentiation.DerivativeStructure#757

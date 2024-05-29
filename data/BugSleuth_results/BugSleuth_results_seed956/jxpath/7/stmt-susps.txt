@@ -1,5 +1,0 @@
-org.apache.commons.jxpath.util.BasicTypeConverter#59
-org.apache.commons.jxpath.ri.JXPathContextReferenceImpl#495
-org.apache.commons.jxpath.ri.JXPathContextReferenceImpl#408
-org.apache.commons.jxpath.ri.InfoSetUtil#111
-org.apache.commons.jxpath.ri.InfoSetUtil#112

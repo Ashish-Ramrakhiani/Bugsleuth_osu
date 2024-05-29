@@ -1,5 +1,0 @@
-com.google.javascript.jscomp.Compiler#182
-com.google.javascript.rhino.Node#221
-com.google.javascript.jscomp.CollapseProperties#440
-com.google.javascript.rhino.Node#1323
-com.google.javascript.jscomp.CollapseProperties#111

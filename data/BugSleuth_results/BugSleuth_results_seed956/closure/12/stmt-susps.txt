@@ -1,5 +1,0 @@
-com.google.javascript.rhino.Node#1002
-com.google.javascript.jscomp.RemoveTryCatch#53
-com.google.javascript.jscomp.RemoveTryCatch#52
-com.google.javascript.rhino.Node#1019
-com.google.javascript.rhino.Node#145

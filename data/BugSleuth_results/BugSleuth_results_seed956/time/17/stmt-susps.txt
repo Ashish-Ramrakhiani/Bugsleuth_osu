@@ -1,5 +1,0 @@
-org.joda.time.DateTime#665
-org.joda.time.DateTimeZone#214
-org.joda.time.DateTime#685
-org.joda.time.DateTimeZone#1175
-org.joda.time.base.AbstractInterval#252

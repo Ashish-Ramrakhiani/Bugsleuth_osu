@@ -1,5 +1,0 @@
-org.mockito.internal.matchers.apachecommons.EqualsBuilder#345
-org.mockito.internal.matchers.apachecommons.EqualsBuilder#346
-org.mockito.internal.configuration.ClassPathLoader#156
-org.mockito.internal.configuration.ClassPathLoader#157
-org.mockito.internal.creation.DelegatingMethod#55

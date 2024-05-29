@@ -1,5 +1,0 @@
-com.google.javascript.jscomp.DefaultPassConfig#1324
-com.google.javascript.jscomp.AbstractCommandLineRunner#245
-com.google.javascript.jscomp.DefaultPassConfig#1003
-com.google.javascript.jscomp.DefaultPassConfig#1325
-com.google.javascript.jscomp.AbstractCommandLineRunner#504

@@ -1,5 +1,0 @@
-org.jsoup.parser.Tokeniser#203
-org.jsoup.parser.Tokeniser#201
-org.jsoup.parser.CharacterReader#92
-org.jsoup.parser.TokeniserState#958
-org.jsoup.parser.Parser#88

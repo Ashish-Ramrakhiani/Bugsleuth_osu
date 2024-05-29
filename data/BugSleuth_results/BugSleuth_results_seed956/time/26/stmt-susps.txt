@@ -1,5 +1,0 @@
-org.joda.time.tz.DateTimeZoneBuilder#214
-org.joda.time.tz.ZoneInfoProvider#162
-org.joda.time.DateTime#518
-org.joda.time.tz.DateTimeZoneBuilder#215
-org.joda.time.DateTimeZone#592

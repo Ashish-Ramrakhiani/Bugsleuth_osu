@@ -1,5 +1,0 @@
-com.google.javascript.jscomp.CheckMissingReturn#170
-com.google.javascript.jscomp.AbstractCommandLineRunner#350
-com.google.javascript.jscomp.CollapseVariableDeclarations#196
-com.google.javascript.jscomp.AbstractCommandLineRunner#751
-com.google.javascript.jscomp.RemoveUnusedVars#935

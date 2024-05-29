@@ -1,5 +1,0 @@
-com.google.javascript.rhino.Node#1003
-com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter#175
-com.google.javascript.rhino.Node#1001
-com.google.javascript.rhino.Node#1002
-com.google.javascript.jscomp.TypeInference#228

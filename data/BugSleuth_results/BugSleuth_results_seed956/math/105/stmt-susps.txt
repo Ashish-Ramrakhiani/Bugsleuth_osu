@@ -1,5 +1,0 @@
-org.apache.commons.math.stat.regression.SimpleRegression#300
-org.apache.commons.math.stat.regression.SimpleRegression#301
-org.apache.commons.math.stat.regression.SimpleRegression#318
-org.apache.commons.math.stat.regression.SimpleRegression#107
-org.apache.commons.math.stat.regression.SimpleRegression#90

@@ -1,5 +1,0 @@
-org.jsoup.parser.HtmlTreeBuilderState#1524
-org.jsoup.Jsoup#73
-org.jsoup.parser.HtmlTreeBuilderState#1513
-org.jsoup.parser.Parser#29
-org.jsoup.parser.HtmlTreeBuilderState#1521

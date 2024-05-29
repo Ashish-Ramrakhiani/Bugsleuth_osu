@@ -1,5 +1,0 @@
-org.jsoup.nodes.FormElement#100
-org.jsoup.nodes.FormElement#101
-org.jsoup.nodes.FormElement#74
-org.jsoup.nodes.FormElement#78
-org.jsoup.nodes.FormElement#84
