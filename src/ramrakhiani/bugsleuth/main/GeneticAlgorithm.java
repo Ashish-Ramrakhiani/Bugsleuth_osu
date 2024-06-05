@@ -59,7 +59,7 @@ public class GeneticAlgorithm<C extends Chromosome<C>, T extends Comparable<T>> 
         //perform crossover and mutation
         while(newPopulation.getSize()<(Configuration.popSize- survivecount)){
            if(Configuration.random.nextFloat(0,1)<=Configuration.MP) {
-                C chromosome = this.population.getRandomChromosome();
+                C chromosome = this.rouletteWheelSelection();
                 C mutated = chromosome.mutate(this.allStatements);
                 newPopulation.addChromosome(mutated);
             }

@@ -27,6 +27,7 @@ public class Main {
 
         readDefects(defect, defects_all,all_defects);
         System.out.println("Read defects");
+        long startTime = System.nanoTime();
 
         for(String defects: defects_all ) {
 
@@ -52,6 +53,7 @@ public class Main {
                 continue;
             }
 
+
             Population<CandidateList> population = createInitialPopulation(Configuration.popSize, allStatements);
             Fitness<CandidateList, Double> fitness = new CandidateFitness();
 
@@ -59,7 +61,15 @@ public class Main {
             addListener(ga, defect);
             ga.evolve(Configuration.maxIter);
 
+
         }
+        long endTime = System.nanoTime();
+        long duration = (endTime - startTime)/1000000000;
+        System.out.println("Total execution time for " + defect + " took " + duration + " seconds");
+        System.out.println("Total number of defects: "+defects_all.size());
+        long avg_time =(long) (duration/ defects_all.size());
+        System.out.println("Average Time for " + defect + " took " + avg_time + " seconds");
+
     }
 
     /**
@@ -115,7 +125,6 @@ public class Main {
      */
 
     private static void readStatementsFromFile(String defect,String filePath, int rankListIndex, LinkedHashSet<String> allStatements,List<LinkedHashSet<String>> allRankLists ) {
-
 
         String result_file = filePath + "/" + defect.split("_")[0].toLowerCase() + "/" + defect.split("_")[1] + "/stmt-susps.txt";
         File fl_result = new File(result_file);
@@ -288,6 +297,5 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 }

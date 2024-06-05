@@ -1,78 +1,38 @@
 package ramrakhiani.bugsleuth.main;
 import ramrakhiani.bugsleuth.config.Configuration;
+
+import java.sql.CallableStatement;
 import java.util.*;
 
 public class CandidateList implements Chromosome<CandidateList>, Cloneable {
 
     private String[] candidate = new String[Configuration.k];
 
+
+
     public CandidateList mutate(LinkedHashSet<String> allStatements){
         int mut_op = Configuration.random.nextInt(4);
         CandidateList result = this.clone();
         switch(mut_op) {
             case 0: {
-                int index1 = Configuration.random.nextInt(this.candidate.length);
-                int index2 = Configuration.random.nextInt(this.candidate.length);
-                while(index2==index1)
-                {
-                    index2 = Configuration.random.nextInt(this.candidate.length);
-                }
-                String temp = result.candidate[index1];
-                result.candidate[index1] = result.candidate[index2];
-                result.candidate[index2] = temp;
+                SwapMutation(result);
                 break;
             }
             case 1:
             {
-                String temp = result.candidate[0];
-                result.candidate[0] = result.candidate[result.candidate.length-1];
-                result.candidate[result.candidate.length-1] = temp;
+                BoundarySwapMutation(result);
                 break;
 
             }
             case 2:
             {
-                String[] array2 = allStatements.toArray(new String[0]);
-                Arrays.sort(array2);
-                String[] array1 = result.candidate;
-                Arrays.sort(array1);
-                if(!Arrays.equals(array1,array2)) {
-                    List<String> allStatementsList = new ArrayList<>(allStatements);
-                    int index1 = Configuration.random.nextInt(0, allStatements.size());
-                    while (Arrays.asList(result.candidate).contains(allStatementsList.get(index1))) {
-                        index1 = Configuration.random.nextInt(0, allStatements.size());
-
-                    }
-                    int index2 = Configuration.random.nextInt(this.candidate.length);
-                    result.candidate[index2] = allStatements.toArray(new String[0])[index1];
-                }
+                ReplacementMutation(result, allStatements);
                 break;
-
             }
             case 3:
             {
-                List<String> allStatementsList = new ArrayList<>(allStatements);
-                int index = Configuration.random.nextInt(this.candidate.length);
-                if(result.candidate[index].contains("#")) {
-                    String path = result.candidate[index].split("#")[0];
-                    int line_no = Integer.parseInt(result.candidate[index].split("#")[1]);
-
-                    String[] statementList = new String[6];
-                    for (int i = 1, j = 0; i <= 3; i++, j++) {
-                        statementList[j] = path + "#" + (line_no + i);
-                        j++;
-                        statementList[j] = path + "#" + (line_no - i);
-
-                    }
-                    for (int k = 0; k < statementList.length; k++) {
-                        if (allStatementsList.contains(statementList[k]) && !(Arrays.asList(result.candidate).contains(statementList[k]))) {
-                            result.candidate[index] = statementList[k];
-                            break;
-                        }
-                    }
-                }
+                Inc_Dec_Mutation(result,allStatements);
                 break;
-
             }
 
         }
@@ -174,6 +134,67 @@ public class CandidateList implements Chromosome<CandidateList>, Cloneable {
             }
         }
         return -1;
+    }
+
+    private void SwapMutation(CandidateList result)
+    {
+        int index1 = Configuration.random.nextInt(this.candidate.length);
+        int index2 = Configuration.random.nextInt(this.candidate.length);
+        while(index2==index1)
+        {
+            index2 = Configuration.random.nextInt(this.candidate.length);
+        }
+        String temp = result.candidate[index1];
+        result.candidate[index1] = result.candidate[index2];
+        result.candidate[index2] = temp;
+
+    }
+    private void BoundarySwapMutation(CandidateList result)
+    {
+        String temp = result.candidate[0];
+        result.candidate[0] = result.candidate[result.candidate.length-1];
+        result.candidate[result.candidate.length-1] = temp;
+    }
+    private void ReplacementMutation(CandidateList result, LinkedHashSet<String> allStatements)
+    {
+        String[] array2 = allStatements.toArray(new String[0]);
+        Arrays.sort(array2);
+        String[] array1 = result.candidate;
+        Arrays.sort(array1);
+        if(!Arrays.equals(array1,array2)) {
+            List<String> allStatementsList = new ArrayList<>(allStatements);
+            int index1 = Configuration.random.nextInt(0, allStatements.size());
+            while (Arrays.asList(result.candidate).contains(allStatementsList.get(index1))) {
+                index1 = Configuration.random.nextInt(0, allStatements.size());
+
+            }
+            int index2 = Configuration.random.nextInt(this.candidate.length);
+            result.candidate[index2] = allStatements.toArray(new String[0])[index1];
+        }
+    }
+
+    private void Inc_Dec_Mutation(CandidateList result, LinkedHashSet<String> allStatements)
+    {
+        List<String> allStatementsList = new ArrayList<>(allStatements);
+        int index = Configuration.random.nextInt(this.candidate.length);
+        if(result.candidate[index].contains("#")) {
+            String path = result.candidate[index].split("#")[0];
+            int line_no = Integer.parseInt(result.candidate[index].split("#")[1]);
+
+            String[] statementList = new String[6];
+            for (int i = 1, j = 0; i <= 3; i++, j++) {
+                statementList[j] = path + "#" + (line_no + i);
+                j++;
+                statementList[j] = path + "#" + (line_no - i);
+
+            }
+            for (int k = 0; k < statementList.length; k++) {
+                if (allStatementsList.contains(statementList[k]) && !(Arrays.asList(result.candidate).contains(statementList[k]))) {
+                    result.candidate[index] = statementList[k];
+                    break;
+                }
+            }
+        }
     }
 
 }

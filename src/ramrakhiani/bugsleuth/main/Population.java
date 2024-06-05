@@ -28,7 +28,7 @@ public class Population<C extends Chromosome<C>> implements Iterable<C> {
     }
 
     public void sortPopulationByFitness(Comparator<C> chromosomesComparator) {
-        Collections.shuffle(this.chromosomes);
+       // Collections.shuffle(this.chromosomes);
         Collections.sort(this.chromosomes, chromosomesComparator);
     }
 
